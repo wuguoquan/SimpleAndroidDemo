@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SimpleAndroidDemo</string>
+    <string name="item1">美女</string>
+    <string name="item2">帅哥</string>
+    <string name="item3">关于我们</string>
+    <string name="item4">反馈</string>
 </resources>

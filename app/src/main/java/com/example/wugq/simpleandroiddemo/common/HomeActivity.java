@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.example.wugq.simpleandroiddemo.R;
 import com.example.wugq.simpleandroiddemo.common.view.CommonPagerAdapter;
 import com.example.wugq.simpleandroiddemo.common.view.CommonTabBean;
+import com.example.wugq.simpleandroiddemo.duanzi.ui.DuanziFragment;
 import com.example.wugq.simpleandroiddemo.meizi.ui.MeiziFragment;
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
@@ -81,7 +82,7 @@ public class HomeActivity extends AppCompatActivity{
     private void initVierPager() {
         mFragments = new ArrayList<>();
         mFragments.add(MeiziFragment.newInstance());
-        mFragments.add(MeiziFragment.newInstance());
+        mFragments.add(DuanziFragment.newInstance());
         mFragments.add(MeiziFragment.newInstance());
         CommonPagerAdapter adapter = new CommonPagerAdapter(getSupportFragmentManager(), mFragments);
         mHomeVp.setAdapter(adapter);

@@ -18,20 +18,22 @@ public class MeiziBean {
      * url : http://ww3.sinaimg.cn/large/7a8aed7bgw1eswencfur6j20hq0qodhs.jpg
      * used : true
      * who : 张涵宇
+     *
+     * {"id":5,"total":15,"url":"http://116.196.83.52:8080/SpringDemo/images/2017-07-02_104208.png"},
      */
 
-    @SerializedName("_id")
-    private String id;
+    @SerializedName("id")
+    private int id;
     @SerializedName("url")
     private String imageUrl;
-    @SerializedName("who")
-    private String who;
+    @SerializedName("total")
+    private int total;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -43,12 +45,12 @@ public class MeiziBean {
         this.imageUrl = imageUrl;
     }
 
-    public String getWho() {
-        return who;
+    public int getTotal() {
+        return total;
     }
 
-    public void setWho(String who) {
-        this.who = who;
+    public void setTotal(int total) {
+        this.total = total;
     }
 
     public MeiziBean(String imageUrl){

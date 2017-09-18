@@ -22,9 +22,7 @@ public class MeiziApi {
 
     public static String getMeiziApi(){
         StringBuilder meiziApi = new StringBuilder();
-        meiziApi.append("http://gank.io/api/data/%E7%A6%8F%E5%88%A9/")
-                .append("15")
-                .append("/" + GetRandom.getRandom());
+        meiziApi.append("http://116.196.83.52:8080/SpringDemo/getimage");
         return String.valueOf(meiziApi);
     }
 

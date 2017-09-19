@@ -20,6 +20,7 @@ import com.example.wugq.simpleandroiddemo.common.view.CommonPagerAdapter;
 import com.example.wugq.simpleandroiddemo.common.view.CommonTabBean;
 import com.example.wugq.simpleandroiddemo.duanzi.ui.DuanziFragment;
 import com.example.wugq.simpleandroiddemo.meizi.ui.MeiziFragment;
+import com.example.wugq.simpleandroiddemo.web.WebFragment;
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
 import com.flyco.tablayout.listener.OnTabSelectListener;
@@ -83,7 +84,7 @@ public class HomeActivity extends AppCompatActivity{
         mFragments = new ArrayList<>();
         mFragments.add(MeiziFragment.newInstance());
         mFragments.add(DuanziFragment.newInstance());
-        mFragments.add(MeiziFragment.newInstance());
+        mFragments.add(WebFragment.newInstance());
         CommonPagerAdapter adapter = new CommonPagerAdapter(getSupportFragmentManager(), mFragments);
         mHomeVp.setAdapter(adapter);
     }
